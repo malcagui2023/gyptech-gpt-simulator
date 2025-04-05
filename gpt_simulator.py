@@ -5,7 +5,18 @@ import pandas as pd
 
 # Branding
 st.set_page_config(page_title="Gyptech GPT", page_icon="🤖", layout="centered")
-st.image("SCM-Analytics Logo.jfif", width=200)
+page_bg_img = '''
+<style>
+body {
+background-image: url("background.png");
+background-size: cover;
+background-position: center;
+}
+</style>
+'''
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
+st.image("SCM-Analytics Logo.jfif", width=100)
 
 # App Header
 st.title("Gyptech GPT – Internal AI Assistant")
