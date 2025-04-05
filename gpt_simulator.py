@@ -3,9 +3,7 @@ import plotly.graph_objects as go
 from PIL import Image
 
 # Branding
-st.set_page_config(page_title="Gyptech GPT", page_icon="🤖", layout="centered")
-logo = Image.open("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Gyptech_Logo.png/600px-Gyptech_Logo.png")
-st.image(logo, width=200)
+st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Gyptech_Logo.png/600px-Gyptech_Logo.png", width=200)
 
 # App Header
 st.title("Gyptech GPT – Internal AI Assistant")
