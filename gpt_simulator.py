@@ -25,9 +25,8 @@ responses = {
         "reply": "To calculate safety stock for product ABC, we use the following parameters:\n\n- Z-score (95% service level): **1.65**\n- Standard deviation of demand (σ): **120 units**\n- Lead time: **7 days**\n\nEstimated Safety Stock = 1.65 × 120 × √7 ≈ **525 units**",
         "note": "Values are based on past 3 months of demand data and current supplier lead time."
     },
-    "inventario": {
-        "reply": "Para calcular el stock de seguridad: **SS = Z × σ × √L**",
-        "note": "Ver la política de inventario, Sección 4.2."
+    "cual es el status del proyecto en dallas": {
+        "reply": "El proyecto en Dallas avanza según lo programado. Actualmente, se han completado todas las fases de diseño y se ha iniciado la implementación en sitio. No se han reportado retrasos críticos hasta ahora. El equipo local ha informado una buena colaboración con los proveedores.\n\nThe Dallas project is progressing as planned. All design phases are complete, and on-site implementation has begun. No major delays have been reported. The local team reports strong collaboration with vendors."
     },
     "calculate safety stock manually": {
         "reply": "Sure! Please enter your own values for Z-score, standard deviation of demand, and lead time below."
@@ -128,4 +127,4 @@ if show_historical_demand:
     st.download_button("📥 Download Demand Data", df_hist.to_csv(index=False), file_name="historical_demand_abc.csv")
 
 else:
-    st.info("Start by asking a question like:\n- What’s the cost of Project 123?\n- How do I calculate safety stock for product ABC?\n- Calculate safety stock manually\n- Historical demand\n- ¿Cómo se calcula el stock de seguridad?")
+    st.info("Start by asking a question like:\n- What’s the cost of Project 123?\n- How do I calculate safety stock for product ABC?\n- Calculate safety stock manually\n- Historical demand\n- Cual es el status del proyecto en Dallas")
