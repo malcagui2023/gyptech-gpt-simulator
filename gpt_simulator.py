@@ -3,7 +3,7 @@ import plotly.graph_objects as go
 
 # Branding
 st.set_page_config(page_title="Gyptech GPT", page_icon="🤖", layout="centered")
-st.image("Logo SCM.png", width=200)
+st.image("SCM-Analytics Logo.jfif", width=200)
 
 # App Header
 st.title("Gyptech GPT – Internal AI Assistant")
