@@ -42,7 +42,7 @@ responses = {
     "calculate safety stock manually": {
         "reply": "Sure! Please enter your own values for Z-score, standard deviation of demand, and lead time below."
     },
-    "historical demand": {
+    "historical demand product ABC": {
         "reply": "Here's the historical monthly demand for product ABC over the last 6 months."
     }
 }
