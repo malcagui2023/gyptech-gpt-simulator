@@ -4,7 +4,7 @@ import math
 import pandas as pd
 
 # Branding
-st.set_page_config(page_title="Gyptech GPT", page_icon="🤖", layout="centered")
+st.set_page_config(page_title="Internal GPT", page_icon="🤖", layout="centered")
 page_bg_img = '''
 <style>
 body {
@@ -19,7 +19,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 st.image("SCM-Analytics Logo.jfif", width=100)
 
 # App Header
-st.title("Gyptech GPT – Internal AI Assistant")
+st.title("Internal GPT – Internal AI Assistant")
 st.markdown("Ask common business questions and get simulated AI-powered responses from your internal knowledge base.")
 
 # Simulated GPT response logic with smarter matching
@@ -27,14 +27,14 @@ responses = {
     "project 123": {
         "reply": "The current cost incurred on Project 123 is **$350,000**.",
         "breakdown": {
-            "Labor": 200000,
-            "Materials": 150000
+            "Labor": $200,000,
+            "Materials": $150,000
         },
         "pdf_link": "https://example.com/Project123_Report.pdf"
     },
     "safety stock for product abc": {
         "reply": "To calculate safety stock for product ABC, we use the following parameters:\n\n- Z-score (95% service level): **1.65**\n- Standard deviation of demand (σ): **120 units**\n- Lead time: **7 days**\n\nEstimated Safety Stock = 1.65 × 120 × √7 ≈ **525 units**",
-        "note": "Values are based on past 3 months of demand data and current supplier lead time."
+        "note": "Values are based on the past 3 months of demand data and current supplier lead time."
     },
     "cual es el status del proyecto en dallas": {
         "reply": "El proyecto en Dallas avanza según lo programado. Actualmente, se han completado todas las fases de diseño y se ha iniciado la implementación en sitio. No se han reportado retrasos críticos hasta ahora. El equipo local ha informado una buena colaboración con los proveedores.\n\nThe Dallas project is progressing as planned. All design phases are complete, and on-site implementation has begun. No major delays have been reported. The local team reports strong collaboration with vendors."
@@ -56,7 +56,7 @@ def get_gpt_response(query):
     return {"reply": "❌ Sorry, I couldn't find data for that query."}
 
 # Input section
-user_input = st.text_input("Ask Gyptech GPT something...", "")
+user_input = st.text_input("Ask Internal GPT something...", "")
 
 # Display result
 show_calculator = False
@@ -65,7 +65,7 @@ calculated_safety_stock = None
 
 if user_input:
     response = get_gpt_response(user_input)
-    st.markdown(f"**Gyptech GPT:** {response['reply']}")
+    st.markdown(f"**Internal GPT:** {response['reply']}")
 
     if user_input.lower() == "calculate safety stock manually":
         show_calculator = True
