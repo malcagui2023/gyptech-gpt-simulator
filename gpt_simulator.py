@@ -70,7 +70,7 @@ if user_input:
     if user_input.lower() == "calculate safety stock manually":
         show_calculator = True
 
-    if user_input.lower() == "historical demand":
+    if user_input.lower() == "historical demand product abc":
         show_historical_demand = True
 
     if "breakdown" in response:
