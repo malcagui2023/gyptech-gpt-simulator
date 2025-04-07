@@ -27,8 +27,8 @@ responses = {
     "project 123": {
         "reply": "The current cost incurred on Project 123 is **$350,000**.",
         "breakdown": {
-            "Labor": $200,000,
-            "Materials": $150,000
+            "Labor": 200000,
+            "Materials": 150000
         },
         "pdf_link": "https://example.com/Project123_Report.pdf"
     },
