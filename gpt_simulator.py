@@ -42,7 +42,7 @@ responses = {
     "calculate safety stock manually": {
         "reply": "Sure! Please enter your own values for Z-score, standard deviation of demand, and lead time below."
     },
-    "historical demand product ABC": {
+    "historical demand": {
         "reply": "Here's the historical monthly demand for product ABC over the last 6 months."
     }
 }
@@ -70,7 +70,7 @@ if user_input:
     if user_input.lower() == "calculate safety stock manually":
         show_calculator = True
 
-    if user_input.lower() == "historical demand product abc":
+    if user_input.lower() == "historical demand":
         show_historical_demand = True
 
     if "breakdown" in response:
